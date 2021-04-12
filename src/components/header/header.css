@@ -1,0 +1,228 @@
+header{
+    position: fixed;
+    background: #1C0C1F;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #80FFDB;
+}
+
+.active{
+    color: #6930C3;
+    font-weight: bold;
+}
+
+.Logo img{
+    width: 55px;
+    height: 30px;
+    float: left;
+}
+
+.Logo{
+    font-weight: 800;
+    font-size: 1.5em;
+    color: #80FFDB;
+    float: left;
+    padding-top: 12px;
+}
+
+.Logo span{
+    margin-left: 11px;
+}
+
+header ul{
+    list-style-type: none;
+    float: left;
+}
+
+.nav{
+    margin-top: 17px;
+    padding: 0;
+}
+
+.nav li{
+    display: inline;
+    margin-left: 5vw;
+}
+
+.Links_login{
+    float: right;
+    padding: 0;
+
+    margin-top: 8px;
+    margin-bottom:7px;
+}
+
+.btn_login{
+    background-color: #6930C3;
+    padding: 13px 30px;
+    margin-top: -3px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.btn_login:hover{
+    background-color: #7D4BCC;
+}
+
+.Links_login li{
+    display: inline;
+    margin-left: 26px;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.backMobileMenu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        height: 45px;
+    }
+
+    .Logo{
+        position: absolute;
+    }
+
+    .burger_menu{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        left: -60px;
+        margin-top: 10px;
+        transition: .5s;
+    }
+
+    .menu{
+        width: 34px;
+        height: 4px;
+        margin-top: 15px;
+        background-color: white;
+        position: relative;
+        border-radius: 2px;
+        transition: .2s .4s;
+    }
+
+    .menu::before{
+        width: 34px;
+        height: 4px;
+        position: absolute;
+        top: -10px;
+        background-color: white;
+        content: '';
+        border-radius: 2px;
+        transition: transform .5s, top .5s .5s;
+    }
+
+    .menu::after{
+        width: 34px;
+        height: 4px;
+        position: absolute;
+        top: 10px;
+        background-color: white;
+        content: '';
+        border-radius: 2px;
+        transition: transform .5s, top .5s .5s ;
+    }
+
+    .menu_open{
+        width: 0px;
+    }
+
+    .menu_open::before{
+        top: 0px;
+        transform: rotate(45deg);
+        transition: top .5s, transform .5s .5s;
+    }
+
+    .menu_open::after{
+        top: 0px;
+        transform: rotate(-45deg);
+        transition: top .5s, transform .5s .5s;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .Links_login{
+        display: none;
+    }
+
+    .mobile_menu{
+        display: block;
+        background-color: white;
+        right: -251px;
+        top: 0px;
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        transition: .5s;
+    }
+    .mobile_menu ul{
+        list-style-type: none;
+        margin-bottom: 10%;
+    }
+
+    .mobile_menu li{
+        padding-bottom: 20%;
+    }
+
+    .mobile_nav{
+        width: 150px;
+    }
+    .mobile_menu a{
+        color: #6930C3;
+    }
+
+    .mobile_menu Button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mobile_menu_open{
+        right: 0px;
+    }
+
+    .backMobileMenuOpen{
+        display: block;
+    }
+}
+
+.mobileMenuBtn{
+    display: inline-block;
+    border: 3px solid #6930C3;
+    padding: 13px 30px;
+    border-radius: 13px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 10%;
+    transition: .3s;
+}
+
+.mobileMenuBtn:hover{
+    background-color: #6930C3;
+    color: #80ffdb;
+}

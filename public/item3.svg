@@ -1,0 +1,16 @@
+<svg width="88" height="141" viewBox="0 0 88 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.5" y="1.5" width="85" height="137.29" rx="9.5" stroke="black" stroke-width="3"/>
+<mask id="path-2-inside-1" fill="white">
+<rect x="8.21332" y="12.7536" width="70.4" height="104.58" rx="2"/>
+</mask>
+<rect x="8.21332" y="12.7536" width="70.4" height="104.58" rx="2" stroke="black" stroke-width="6" mask="url(#path-2-inside-1)"/>
+<rect x="34.0267" y="122.435" width="21.12" height="8.92754" rx="4" fill="#020202"/>
+<rect x="19" y="41" width="52.8" height="15.3043" rx="2" fill="#6930C3"/>
+<path d="M49.5651 55.029C48.2921 55.029 68.3091 77.9855 64.2041 55.029H49.5651Z" fill="#6930C3"/>
+<rect x="21.3467" y="44.826" width="32.8533" height="2.55072" fill="black"/>
+<rect x="21.3467" y="49.9276" width="18.7733" height="2.55072" fill="black"/>
+<rect x="14" y="77" width="59" height="33" rx="4" fill="#6930C3"/>
+<rect x="14" y="98" width="59" height="5" fill="black"/>
+<rect x="19" y="81" width="23" height="4" fill="black"/>
+<rect x="19" y="87" width="15" height="4" fill="black"/>
+</svg>

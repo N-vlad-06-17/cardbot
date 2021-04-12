@@ -1,0 +1,125 @@
+
+.first_screen{
+    width: 100%;
+    height: 100vh;
+    background-color: #1C0C1F;
+    display: block;
+    padding-top: 35vh;
+    box-sizing: border-box;
+}
+
+.main_text{
+    float: left;
+    width: 40vw;
+}
+
+.main_text h3{
+    color: #80FFDB;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 22px 0px;
+}
+
+.main_text h1{
+    margin: 0;
+    line-height: 120%;
+    color: #80FFDB;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mainLinkLogin{
+    display: inline-block;
+    background-color: #6930C3;
+    color: #80ffdb;
+    padding: 15px 40px;
+    border-radius: 12px;
+    transition: .4s;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 45px;
+    margin-bottom: 20px;
+}
+
+.mainLinkVkBot{
+    display: inline-block;
+    border-radius: 12px;
+    border: 2px solid #80ffdb;
+    padding: 15px 40px;
+    color: #80ffdb;
+    transition: .4s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainLinkVkBot:hover{
+    background-color: #80ffdb;
+    color: #6930C3;
+
+}
+
+.mainLinkLogin:hover{
+    background-color: #7D4BCC;
+}
+
+.main_img{
+    width: 30vw;
+    max-width: 500px;
+    float: right;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    left: 30%;
+    top: 20px;
+    width: 15vw;
+    max-width: 300px;
+    max-height: 300px;
+    height: 15vw;
+    background-color: #6930C3;
+    border-radius: 100px;
+    filter: blur(50px);
+}
+
+@media screen and (max-width: 900px) {
+    .main_text h3{
+        color: #80FFDB;
+        font-weight: 500;
+        position: absolute;
+        bottom: 10vh;
+    }
+
+    .main_text h1{
+        line-height: 30px;
+        color: #80FFDB;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 20vh;
+    }
+
+    .mainLinkLogin{
+        display: none;
+    }
+
+    .mainLinkVkBot{
+        display: none;
+    }
+    .main_img{
+        width: 60%;
+        top: 40vh;
+        left: 20%;
+        max-width: 500px;
+        float: right;
+        position: absolute;
+        max-width: 450px;
+    }
+
+    .circle{
+        left: 25%;
+        top: 20px;
+        width: 30vw;
+        height: 30vw;
+    }
+}

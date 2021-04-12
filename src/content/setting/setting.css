@@ -1,0 +1,102 @@
+.setting{
+    padding-left: 230px;
+    padding-top: 20px;
+}
+
+.setting h2{
+    margin: 0 20px 10px 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #6930C3;
+
+    overflow: hidden;
+}
+
+.setting small{
+    color: #6930C3;
+}
+
+.setting .errorClass{
+    color: red;
+}
+
+.setting form{
+    width: 400px;
+}
+
+.setting input{
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #6930C3;
+    height: 35px;
+    font-size: 17px;
+    width: 346px;
+    padding-left: 10px;
+    margin: 10px auto 5px;
+}
+
+.setting button{
+    background-color: #6930C3;
+    outline: none;
+    color: #80ffdb;
+    font-weight: 500;
+    font-size: 15px;
+    width: 220px;
+    height: 45px;
+    margin: 10px auto;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+.setting button:hover{
+    background-color: #7D4BCC;
+}
+
+@media screen and (max-width: 900px) {
+    .setting{
+        padding: 20px;
+    }
+
+    .setting form{
+        width: 80vw;
+    }
+
+    .setting input{
+        width: 70vw;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .setting small{
+        font-size: 12px;
+    }
+
+    .setting h2{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    .setting button{
+        font-size: 12px;
+        width: 150px;
+        height: 35px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

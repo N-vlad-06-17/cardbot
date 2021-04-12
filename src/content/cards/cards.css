@@ -1,0 +1,470 @@
+.cards{
+    margin-left: 210px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cards form{
+    display: block;
+    width: 50vw;
+    height: 50px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.cards form input{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0px;
+    box-shadow: inset 0px 0px 5px #7C7C7C;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding-left: 15px;
+    color: #7C7C7C;
+}
+
+.cards form input:focus{
+    box-shadow: 0px 0px 10px #7D4BCC;
+}
+
+
+.cards form button{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    outline: none;
+    color: #7C7C7C;
+}
+
+.cards .add{
+    right: -100px;
+    color: #3a1940;
+    cursor: pointer;
+    border: 1px solid #cfcfcf;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    top: 2px;
+    transition: .4s;
+}
+
+.cards .add:hover{
+    background-color: #cfcfcf;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap: 30px;
+    padding: 0px 30px;
+}
+.grid-item {
+    box-shadow: 0 0 5px #7C7C7C;
+    padding: 20px 50px;
+    font-size: 30px;
+    text-align: left;
+    cursor: pointer;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.grid-item i{
+    float: right;
+    margin-right: -20px;
+    transition:  .3s;
+    font-size: 20px;
+}
+
+.grid-item i:hover{
+    color: #d90202;
+}
+
+.grid-item small{
+    font-size: 15px;
+    margin: 0px;
+    color: #6930C3;
+}
+
+.grid-item h2{
+    font-size: 25px;
+    max-height: 100px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.grid-item p{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.addMenu{
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.addMenu .close{
+    width: 70vw;
+    margin: 100px auto 0;
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    color: white;
+}
+
+.addMenu .close i{
+    cursor: pointer;
+}
+
+.addMenu form{
+    background-color: white;
+    height: 360px;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.addMenu small{
+    color: #6930C3;
+}
+
+.addMenu .trigger{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.change{
+    width: 90px;
+    height: 40px;
+    box-shadow: inset 0px 0px 5px #7C7C7C;
+    border-radius: 50px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.change div{
+    width: 20px;
+    height: 20px;
+    background-color: #ff8e0d;
+    border-radius: 50px;
+    position: absolute;
+    top: -2px;
+    transition: .4s;
+    right: 50px;
+    border: 12px solid black;
+
+}
+
+.on div{
+    right: 0;
+    top: -2px;
+    transition: .4s;
+    background-color: #0d35ff;
+}
+
+.fa-align-left{
+    margin-left: -35px;
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+.fa-image{
+    float: right;
+    font-size: 25px;
+    margin-top: 7px;
+    margin-right: -35px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    width: 40%;
+    float: left;
+    height: 173px;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 5px #7C7C7C;
+    transition: .4s;
+}
+
+textarea:disabled{
+    cursor: not-allowed;
+    background-color: #dbdbdb;
+}
+
+.addPhoto .form-group{
+    float: right;
+    width: 40%;
+}
+.addPhoto input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.addPhoto .label{
+    width:100%;
+    height: 173px;
+    box-shadow: inset 0px 0px 5px #7C7C7C;
+    box-sizing:border-box ;border-radius:5px;display:block;padding: 2em;
+    transition: .3s ;cursor:pointer;text-align:center;
+}
+.addPhoto .label i{display:block;font-size:42px;padding-bottom:16px}
+.addPhoto .label i,.addPhoto .label .title{
+    color:grey;
+    transition:200ms color;
+}
+
+.addPhoto .label:hover i,.addPhoto .label:hover .title{color:#000}
+.addPhoto small{
+    display: block;
+    color: black;
+    opacity: .6;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.addPhoto .disabled{
+    cursor: not-allowed;
+    background-color: #dbdbdb;
+}
+
+.addPhoto .title{
+    overflow: hidden;
+    display: block;
+    max-height: 60%;
+}
+
+.addMenu .save{
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid #6930C3;
+    color: #6930C3;
+    width: 170px;
+    font-size: 20px;
+    margin: 26vh auto 10px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 500;
+}
+
+.addMenu .save:hover{
+    background-color: #6930C3;
+    color: #80ffdb;
+}
+
+.ImgContainer{
+    display: block;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.userImg{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .cards{
+        margin:0px;
+    }
+
+    .cards .add{
+        border: none;
+        color: white;
+        background-color: #8141e8;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        top: auto;
+        right: 6vw;
+        bottom: 4vh;
+        position: fixed;
+        transition: .4s;
+    }
+
+    .cards .add:hover{
+        background-color: #8141e8;
+    }
+
+    .grid-container {
+        padding: 0px 10px;
+    }
+
+    .cards form{
+        display: block;
+        width: 80vw;
+        height: 50px;
+        margin: 30px auto;
+        position: relative;
+    }
+
+    .cards form input{
+        font-size: 20px;
+    }
+
+    .addMenu{
+        height: 100vh;
+        width: 100vw;
+        padding-top: 80px;
+    }
+
+    .addMenu .close{
+        position: absolute;
+        color: black;
+        top: -10px;
+        right: 9vw;
+        z-index: 1;
+    }
+
+    .addMenu form{
+        background-color: white;
+        height: 360px;
+        padding: 20px;
+        width: 80vw;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    .addMenu small{
+        color: #6930C3;
+    }
+
+    .addMenu small{
+        font-size: 12px;
+    }
+
+    .addMenu .trigger{
+        width: 100%;
+        font-size: 15px;
+        height: 38px;
+        margin: 10px 0px 10px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        font-size: 15px;
+        width: 49%;
+        padding: 20px 15px;
+    }
+
+    .addPhoto .form-group{
+        width: 48%;
+    }
+
+    .addPhoto .label{
+        font-size: 15px;
+        padding: 30px 10px;
+    }
+
+    .addMenu .save{
+        width: 160px;
+        font-size: 15px;
+        border-width: 2px;
+        height: 42px;
+        margin: 130px auto 10px;
+    }
+
+    .grid-item {
+        padding: 20px 50px 20px 25px;
+    }
+
+    .grid-item small{
+        font-size: 12px;
+    }
+
+    .grid-item h2{
+        font-size: 20px;
+    }
+
+    .grid-item p{
+        font-size: 15px;
+    }
+}
+
+.test{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    padding-top: 75px;
+}
+
+.test_card{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+    border-radius: 8px;
+    min-width: 40vw;
+    max-width: 90vw;
+    min-height: 30vh;
+    max-height: 90vh;
+}
+
+.test img{
+    max-width: 70vw;
+    max-height: 70vh;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+.test .close{
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.test small{
+    color: #6930C3;
+    display: block;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.test h2{
+    margin: 0;
+    max-height: 30vh;
+    overflow: auto;
+}
+
+.test h3{
+    margin: 0;
+    max-height: 30vh;
+    overflow: auto;
+}
+
+.loadContainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+

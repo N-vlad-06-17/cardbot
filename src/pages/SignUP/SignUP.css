@@ -1,0 +1,149 @@
+.signup{
+    padding: 12vh 12vh 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signup form{
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 45vw;
+    min-width: 500px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signup h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #6930C3;
+    margin-bottom: 20px;
+}
+
+.signup label{
+    font-size: 24px;
+    font-weight: 500;
+    color: #6930C3;
+}
+
+.signup input{
+    outline: none;
+    background-color: white;
+    border-radius: 9px;
+    border: 3px solid #6930C3;
+    height: 40px;
+    font-size: 17px;
+    width: 346px;
+    padding-left: 10px;
+    margin: 10px auto 5px;
+}
+
+.signup small{
+    color: red;
+    margin-bottom: 30px;
+    height: 0px;
+}
+
+.signup .errorClass{
+    border: 3px solid red;
+}
+
+.signup button{
+    background-color: #6930C3;
+    outline: none;
+    color: #80ffdb;
+    font-weight: 400;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+.signup button:hover{
+    background-color: #7D4BCC;
+}
+
+@media screen and (max-width: 900px) {
+    .signup{
+        padding: 20% 0 0 0;
+    }
+
+    .signup form{
+        padding: 10px 0;
+        width: 70vw;
+        min-width: 320px;
+        box-shadow: none;
+        text-align: left;
+    }
+
+    .signup h2{
+        font-size: 20px;
+        display: block;
+        width: 140px;
+        margin: 10px auto;
+    }
+
+    .signup label{
+        font-size: 15px;
+        margin-left: 4%;
+        color: #6930C3;
+    }
+
+    .signup small{
+        color: red;
+        margin-bottom: 20px;
+        height: 0px;
+    }
+
+    .signup input{
+        height: 30px;
+        font-size: 15px;
+        width: 90%;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        border: 2px solid #6930C3;
+    }
+
+    .signup button{
+        font-size: 15px;
+        width: 220px;
+        height: 45px;
+        margin-top: 10px;
+    }
+
+    .signup p{
+        font-size: 17px;
+    }
+}
+
+.signup .disabled{
+    background-color: #7C7C7C;
+    cursor: not-allowed;
+    color: black;
+}
+
+.signup .disabled:hover{
+    background-color: #7C7C7C;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+

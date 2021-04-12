@@ -1,0 +1,116 @@
+.cabinet{
+    padding: 55px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: white;
+    display: block;
+    width: 210px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 0px 0px 5px #626262;
+    padding-top: 10px;
+}
+.mobile_navbar{
+    display: none;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    margin: 0;
+
+}
+
+.navbar li{
+    margin: 2px 0;
+}
+
+.navbar li a{
+    font-size: 17px;
+    color: #3a1940;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.navbar a:hover{
+    background-color: #e3e3e3;
+    text-align: left;
+}
+
+.navbar a.active{
+    background-color: #c2ace5;
+    color: #6930C3;
+
+}
+
+@media screen and (max-width: 900px) {
+    .navbar{
+        bottom: 4vh;
+        width: 154px;
+        height: 49px;
+        padding: 0;
+        position: fixed;
+        left: calc(50vw - 77px);
+        border-radius: 20px;
+        box-shadow: 0 0 5px #7C7C7C;
+    }
+
+    .desctop_navbar{
+        display: none;
+    }
+
+    .mobile_navbar{
+        display: block;
+    }
+
+    .navbar ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    .navbar li{
+        display: inline-block;
+        margin: 0;
+    }
+
+    .navbar li a{
+        color: #3a1940;
+        display: inline-block;
+        padding: 10px;
+        transition: .4s;
+        border-radius: 0;
+    }
+
+    .navbar li:first-child a{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .navbar li:last-child a{
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .mobile_navbar i{
+        font-size: 30px;
+
+    }
+
+    .navbar a:hover{
+        background-color: #e3e3e3;
+        text-align: left;
+    }
+
+    .navbar a.active{
+        background-color: rgba(0, 0, 0, .0);
+        color: #6930C3;
+    }
+}

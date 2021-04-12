@@ -1,0 +1,46 @@
+.phone{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.phone img{
+    position: absolute;
+}
+
+.layer_screen{
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 11%;
+    animation: move_screen;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+}
+
+.layer_content{
+    width: 76%;
+    margin-top: 3.2%;
+    margin-left: 15%;
+    animation: move_content;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+@keyframes move_screen{
+    50% {
+        margin-top: -2%;
+    }
+
+    100% {
+        margin-top: 4%;
+    }
+}
+@keyframes move_content{
+    50% {
+        margin-top: -8%;
+    }
+
+    100% {
+        margin-top: 3.2%;
+    }
+}

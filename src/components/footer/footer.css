@@ -1,0 +1,41 @@
+.footer{
+    background-color: #C5C5C5;
+    padding: 2% 0 2%;
+}
+
+.footer p{
+    font-size: 18px;
+    width: 267px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .footer p{
+        font-size: 15px;
+        width: 223px;
+    }
+}
+
+.footerImg{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin: 20px auto 0;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+    .footerImg{
+        width: 240px;
+    }
+}
+
+.footerImg img{
+    width: 20px;
+}
+
+
+
+
+

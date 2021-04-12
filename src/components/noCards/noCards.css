@@ -1,0 +1,23 @@
+.noCards{
+    width: 100%;
+    text-align: center;
+}
+
+.noCards hr{
+    background-color: #757575;
+    border: none;
+    height: 2px;
+    margin-bottom: 5vh;
+}
+
+.noCards h2{
+    color: #757575;
+}
+
+.noCards p{
+    color: #757575;
+}
+
+.noCards img{
+    width: 100%;
+}
